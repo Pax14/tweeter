@@ -1,0 +1,20 @@
+.nav-bar {
+  height: 120px;
+  width: 100%;
+  background-color: #4056a1;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 1.5em;
+  font-family: 'Bungee', cursive;
+}
+
+.tweeter {
+  margin: 1.5em;
+  display: flex;
+  flex-direction: column;
+}

@@ -7,8 +7,21 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet">  
+
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+
+    <!-- Nav Bar CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+
+    <!-- Arrows -->
+    <script src="https://kit.fontawesome.com/2450a6470d.js" crossorigin="anonymous"></script>
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,9 +32,25 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <nav class="nav-bar">
+      <div>
+        <span class ="logo">tweeter</span>
+      </div>
+      <div class ="tweeter">
+        <span><b>Write</b> a new tweet</span>
+       <i class="fas fa-angle-double-down" align = "center" style = "color: red"></i>
+      </div>
     </nav>
+
+    <header class= "header">
+      <div>
+        <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+        <h2>Paxon Cheung</h2>
+      </div>
+    </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container"></main>

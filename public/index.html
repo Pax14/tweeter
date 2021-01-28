@@ -20,6 +20,9 @@
     <!-- Nav Bar CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
+    <!-- New Tweet CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
     <!-- Arrows -->
     <script src="https://kit.fontawesome.com/2450a6470d.js" crossorigin="anonymous"></script>
 
@@ -28,6 +31,9 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <!-- Counter JS -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -54,11 +60,18 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      
-      <div>TWEETS</div>
-      <div>TWEES</div>
-      <div>TWEET</div>
-      <div>TWETS</div>
+      <section class="new-tweet">
+        <form action ="/tweets" method="POST">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div class="submit-and-counter">
+            <button class="button" type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <section class = "main-container">
+      </section>
     </main>
   </body>
 </html>

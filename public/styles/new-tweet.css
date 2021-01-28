@@ -1,0 +1,125 @@
+.new-tweet  {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit-and-counter {
+  font-size: medium;
+  font-family: 'Bungee';
+  display: flex;
+  flex-grow: auto;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.button {
+  color: #f4f1ec;
+  background-color: #0000FF;
+  border: none;
+}
+
+.negative {
+  color: red;
+}
+
+textarea {
+  height: 30px;
+  width: 100%;
+  background-color: #f4f1ec;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: smaller;
+  outline: none;
+  overflow: hidden;
+  display: block;
+  border: none;
+  border-bottom: solid;
+  resize: none;
+}
+
+.humming {
+  margin-top: 50px;
+}
+
+.main-container {
+  margin-top: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.tweet-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+article {
+  border: solid;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+article:hover {
+  box-shadow: 10px 10px;
+  color: black
+}
+
+article .tweet-header .handle {
+  display: none;
+}
+
+article:hover .tweet-header .handle {
+  display: contents;
+  color: lightblue
+}
+
+.profile-picture {
+  align-self: flex-start;
+  height: 75px;
+  width: 75px;
+
+}
+
+.username {
+  flex-grow: 4;
+  margin-left: 10px;
+}
+
+.actual-tweet {
+  width: 97%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.5em;
+  padding-left: 0em;
+  padding-bottom: 1em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-top: solid;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 15px;
+}
+
+

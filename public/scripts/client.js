@@ -69,6 +69,12 @@ $(document).ready(function(){
     event.preventDefault();
     // console.log($('form'))
     const formInput = $('form').serialize()
+    if (formInput.length === 5) {
+      alert('Your tweet is empty.... doh')
+    }
+    if (formInput.length > 145) {
+      alert('Your tweet is longer than 140 characters.... doh')
+    }
     // console.log(formInput)
   })
 })

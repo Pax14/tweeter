@@ -36,8 +36,14 @@ const renderTweets = function(tweets) {
   for (let i = 0; i < tweets.length; i++) {
     let $tweet =  createTweetElement(tweets[i]);
     // console.log($tweet)
-    $('.main-container').append($tweet);
+    $('.main-container').prepend($tweet);
   }
+}
+
+const renderNewTweets = function(tweets) {
+  // just for new tweets
+  let $tweet =  createTweetElement(tweets);
+  $('.main-container').prepend($tweet);
 }
 
 const createTweetElement = function(tweet) {
@@ -71,9 +77,18 @@ $(document).ready(function(){
     const formInput = $('form').serialize()
     if (formInput.length === 5) {
       alert('Your tweet is empty.... doh')
-    }
-    if (formInput.length > 145) {
+    } else if (formInput.length > 145) {
       alert('Your tweet is longer than 140 characters.... doh')
+    } else {
+      const newPost = $.post('/tweets', formInput, function() {
+        $.get('/tweets', function (data){
+          let newTweet = data[data.length - 1];
+          console.log(newTweet)
+          renderNewTweets(newTweet);
+        })
+        $('textarea').val('');
+        $('output').text('140');
+      })
     }
     // console.log(formInput)
   })

@@ -9,6 +9,7 @@ $(document).ready(function() {
         .closest(".new-tweet")
         .find(".counter")
         .text(140 - textCount)
+        .removeClass("negative")
     } else {
       $(this)
         .closest(".new-tweet")

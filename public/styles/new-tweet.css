@@ -93,7 +93,6 @@ article:hover .tweet-header .handle {
   align-self: flex-start;
   height: 75px;
   width: 75px;
-
 }
 
 .username {
@@ -108,6 +107,7 @@ article:hover .tweet-header .handle {
   padding: 0.5em;
   padding-left: 0em;
   padding-bottom: 1em;
+  flex-wrap: wrap;
 }
 
 footer {

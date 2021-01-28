@@ -75,6 +75,8 @@ $(document).ready(function(){
     event.preventDefault();
     // console.log($('form'))
     const formInput = $('form').serialize()
+    console.log(formInput.length)
+    console.log(formInput)
     if (formInput.length === 5) {
       alert('Your tweet is empty.... doh')
     } else if (formInput.length > 145) {
@@ -94,3 +96,7 @@ $(document).ready(function(){
   })
 })
 
+/* known bugs:
+ * 1 single string that is too long extends past the box
+ * counter is kinda fucked up, current code replaces spaces with '%20' making 1 space = 3 characters.
+*/

@@ -122,4 +122,13 @@ footer {
   font-size: 15px;
 }
 
+.error {
+  color: red;
+  border: solid;
+  border-color: red;
+  padding: 0.5em;
+  text-align: center;
+  display: none;
+}
+
 

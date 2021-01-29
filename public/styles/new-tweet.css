@@ -1,11 +1,22 @@
+
+
 .new-tweet  {
-  margin-top: 25px;
+  height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width:1024px) {
+
+  .new-tweet {
+    height: 200px;
+  }
+  
 }
 
 .submit-and-counter {
@@ -102,6 +113,8 @@ article:hover .tweet-header .handle {
 
 .actual-tweet {
   width: 97%;
+  display: inline-block;
+  word-wrap: break-word;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0.5em;
@@ -132,3 +145,17 @@ footer {
 }
 
 
+@media only screen and (min-width:1025px) {
+
+  .main-container {
+    max-width: 100%;
+  }
+
+  .new-tweet {
+    max-width: 100%;
+  }
+
+  .container{
+    max-width: 50%;
+  }
+}

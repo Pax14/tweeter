@@ -4,12 +4,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-flow: column-wrap;
   align-items: center;
   background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
   background-color: #49d1ba;
   padding-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .name {
   margin-top: -0.5em;
 }
+
+@media only screen and (min-width:1025px) {
+  .header {
+    margin-left: 1em;
+  }
+}
+

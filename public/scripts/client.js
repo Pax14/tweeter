@@ -61,7 +61,7 @@ const errorMessage = function(str) {
     $('.error').slideDown("slow");
   }
   if (str === 'no chars') {
-    // console.log('too many chars')
+    // console.log('no chars')
     $('.error').hide();
     $('.error').empty();
     $('.error').append('Error: Your tweet is empty..');
@@ -80,8 +80,8 @@ const createTweetElement = function(tweet) {
       </header>
       <main class="actual-tweet">${escape(tweet.content.text)}</main>
       <footer>
-        <div class="time">${tweet.created_at}</div>
-        <div class="flag-share-like">FLAG SHARE LIKE</div>
+        <div class="time">${moment(tweet.created_at).fromNow()}</div>
+        <div class="flag-share-like"><i class="far fa-flag"></i> <i class="fas fa-retweet"></i> <i class="fas fa-heart"></i></div>
       </footer>
     </article>`;
   
@@ -90,10 +90,16 @@ const createTweetElement = function(tweet) {
 
 $(document).ready(function(){
 
+  // https://www.geeksforgeeks.org/how-to-create-auto-resize-textarea-using-javascript-jquery/
+  $('textarea').on('input', function() {
+    this.style.height = '30px';
+    this.style.height = this.scrollHeight + 'px';
+  });
+
   const loadTweets = $.get('/tweets', function (data){
     renderTweets(data);
   })
-  
+
   $('button').click(function(event) {
     event.preventDefault();
     // console.log($('form'))
@@ -110,7 +116,7 @@ $(document).ready(function(){
       $('.error').hide();
       $('.error').empty();
       const newPost = $.post('/tweets', formInput, function() {
-        $.get('/tweets', function (data){
+        $.get('/tweets', function (data) {
           let newTweet = data[data.length - 1];
           console.log(newTweet)
           renderNewTweets(newTweet);
@@ -124,7 +130,5 @@ $(document).ready(function(){
 })
 
 /* known bugs:
- * 1 single string that is too long extends past the box
  * counter is kinda fucked up, current code replaces spaces with '%20' making 1 space = 3 characters.
- * text box doesnt expand;
 */

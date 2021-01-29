@@ -19,3 +19,56 @@
   display: flex;
   flex-direction: column;
 }
+
+@media only screen and (max-width:1024px) {
+
+  .nav-bar {
+    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+    background-color: #49d1ba;
+  }
+
+  .logo {
+    color: black;
+  }
+
+  .tweeter {
+    color: black;
+  }
+
+}
+
+@media only screen and (min-width: 361px) and (max-width: 420px) {
+
+  .nav-bar {
+    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+    background-color: #49d1ba;
+  }
+
+  .logo {
+    color: black;
+    font-size: smaller;
+  }
+
+  .tweeter {
+    font-size: smaller;
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .nav-bar {
+    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+    background-color: #49d1ba;
+  }
+
+  .logo {
+    color: black;
+    font-size: small;
+  }
+
+  .tweeter {
+    font-size: small;
+    color: black;
+  }
+}

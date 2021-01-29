@@ -53,6 +53,7 @@
     font-size: smaller;
     color: black;
   }
+
 }
 
 @media only screen and (max-width: 360px) {
@@ -71,4 +72,5 @@
     font-size: small;
     color: black;
   }
+  
 }

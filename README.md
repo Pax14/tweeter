@@ -14,10 +14,13 @@ Tweeter is a simple, single-page Twitter clone using HTML, CSS, jQuery, NodeJS, 
 
 ## Screenshots
 
+Screenshot of tablet interface with error handling
 ![Screenshot of tablet interface with error handling](https://github.com/Pax14/tweeter/blob/master/screenshots/TabletViewErrorHandling.png)
 
+Screenshot of mobile interface
 ![Screenshot of mobile interface](https://github.com/Pax14/tweeter/blob/master/screenshots/Phoneview.png)
 
+Screenshot of desktop interface
 ![Screenshot of desktop interface](https://github.com/Pax14/tweeter/blob/master/screenshots/Desktopview.png)
 
 ## Dependencies

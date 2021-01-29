@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top: 0;
 }
 
 .logo {
@@ -25,6 +26,7 @@
   .nav-bar {
     background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
     background-color: #49d1ba;
+    position: fixed;
   }
 
   .logo {
@@ -42,6 +44,7 @@
   .nav-bar {
     background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
     background-color: #49d1ba;
+    position: fixed;
   }
 
   .logo {
@@ -72,5 +75,5 @@
     font-size: small;
     color: black;
   }
-  
+
 }

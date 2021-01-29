@@ -152,7 +152,7 @@ footer {
 @media only screen and (max-width:1024px) {
 
   .new-tweet {
-    height: 200px;
+    height: 100px;
   }
   
 }
